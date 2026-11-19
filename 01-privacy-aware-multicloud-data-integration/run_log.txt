@@ -1,0 +1,83 @@
+preprocess {'missing_before': {'quasi_identifier_count': 136, 'lineage_completeness': 216, 'anchor_latency_ms': 287}, 'outliers_fixed': {'records_transferred': 0, 'anchor_latency_ms': 62}}
+adequacy pairs [('EU', 'SG'), ('EU', 'UK'), ('SG', 'EU'), ('UK', 'EU')]
+                       model   roc_auc    pr_auc  f1_at_0_5     brier        r2       mae      mape
+0                 Planner LR  0.942517  0.862892   0.759219  0.078473       NaN       NaN       NaN
+1                Auditor GBM  0.922374  0.818637   0.719882  0.094356       NaN       NaN       NaN
+2  Planner logit-OLS (re-id)       NaN       NaN        NaN       NaN  0.894080  0.065289       NaN
+3        Auditor GBM (re-id)       NaN       NaN        NaN       NaN  0.911806  0.059242       NaN
+4            Latency log-OLS       NaN       NaN        NaN       NaN  0.929229       NaN  0.260215
+seed 0 win 0 done  t=3s  milp vars=2476 cons=306 0.10s
+seed 0 win 1 done  t=4s  milp vars=2568 cons=306 0.03s
+seed 0 win 2 done  t=6s  milp vars=2661 cons=306 0.03s
+seed 0 win 3 done  t=8s  milp vars=2438 cons=306 0.24s
+seed 0 win 4 done  t=10s  milp vars=2543 cons=306 1.09s
+seed 0 win 5 done  t=11s  milp vars=2562 cons=306 0.13s
+seed 1 win 0 done  t=13s  milp vars=2724 cons=306 0.29s
+seed 1 win 1 done  t=14s  milp vars=2561 cons=306 0.07s
+seed 1 win 2 done  t=15s  milp vars=2296 cons=306 0.08s
+seed 1 win 3 done  t=16s  milp vars=2463 cons=306 0.03s
+seed 1 win 4 done  t=17s  milp vars=2708 cons=306 0.43s
+seed 1 win 5 done  t=19s  milp vars=2608 cons=306 0.18s
+seed 2 win 0 done  t=20s  milp vars=2751 cons=306 0.04s
+seed 2 win 1 done  t=21s  milp vars=2503 cons=306 0.06s
+seed 2 win 2 done  t=23s  milp vars=2699 cons=306 0.04s
+seed 2 win 3 done  t=25s  milp vars=2458 cons=306 0.44s
+seed 2 win 4 done  t=27s  milp vars=2746 cons=306 0.10s
+seed 2 win 5 done  t=28s  milp vars=2899 cons=306 0.08s
+seed 3 win 0 done  t=29s  milp vars=2471 cons=306 0.03s
+seed 3 win 1 done  t=30s  milp vars=2721 cons=306 0.08s
+seed 3 win 2 done  t=31s  milp vars=2456 cons=306 0.05s
+seed 3 win 3 done  t=33s  milp vars=2490 cons=306 0.09s
+seed 3 win 4 done  t=34s  milp vars=2409 cons=306 0.02s
+seed 3 win 5 done  t=35s  milp vars=2545 cons=306 0.05s
+seed 4 win 0 done  t=36s  milp vars=2737 cons=306 0.16s
+seed 4 win 1 done  t=38s  milp vars=2606 cons=306 0.03s
+seed 4 win 2 done  t=41s  milp vars=2560 cons=306 1.80s
+seed 4 win 3 done  t=42s  milp vars=2685 cons=306 0.03s
+seed 4 win 4 done  t=44s  milp vars=2567 cons=306 0.88s
+seed 4 win 5 done  t=46s  milp vars=2612 cons=306 0.16s
+                      Method  cost_mean  cost_std  cost_proc_mean  cost_proc_std  cost_anchor_mean  cost_anchor_std  rejected_mean  rejected_std  viol_audit_pct_mean  viol_audit_pct_std  viol_plan_pct_mean  viol_plan_pct_std  reid_mean_mean  reid_mean_std  reid_hi_pct_mean  reid_hi_pct_std  served_pct_mean  served_pct_std  residency_breach_mean  residency_breach_std  util_loss_gb_mean  util_loss_gb_std  lat_mean_mean  lat_mean_std    gas_mean     gas_std  solve_s_mean  solve_s_std  all_ok_mean  all_ok_std
+0            MILP (proposed)    156.715    26.801          16.682          4.375             0.367            0.144         27.933         5.458                5.070               0.572               3.974              0.023           0.236          0.006             6.380            1.682           81.378           3.639                    0.0                 0.000              0.218             0.027       2597.507         1.955  150803.223   33740.021         0.227        0.387      100.000       0.000
+1  Greedy cheapest-compliant    236.940    52.469          19.080          5.340             1.693            0.137         43.233        10.728                4.802               0.630               3.966              0.136           0.235          0.006             6.016            1.783           71.178           7.152                    0.0                 0.000              0.230             0.024       3201.056       152.678  781865.294   68655.795         0.156        0.051        0.000       0.000
+2               Single-cloud    160.817    26.558          21.117          5.563             0.367            0.144         27.867         5.551                4.824               0.689               3.973              0.048           0.236          0.006             6.367            1.747           81.422           3.700                    0.0                 0.000              0.217             0.029       2597.184         2.115  150925.292   33524.867         0.038        0.041        3.333      18.257
+3            Random feasible    176.584    27.310          34.905          9.621             1.512            0.263         28.033         5.082                3.680               0.824               2.164              0.352           0.176          0.007             3.826            1.551           81.311           3.388                    0.0                 0.000              0.338             0.049       2807.416       182.092  672835.381  134118.249         0.202        0.029        6.667      25.371
+4              Unconstrained     20.387     3.447           9.187          2.771             0.367            0.144          2.167         0.791               39.838               3.520              46.279              3.825           0.690          0.016            95.918            1.605           98.556           0.528                   65.3                 6.919              0.000             0.000       2597.121         2.211  151020.762   33513.316         0.304        0.156        0.000       0.000
+                    baseline          metric   mean_diff  wins   n       p_value
+0  Greedy cheapest-compliant            cost   80.224540    30  30  1.862645e-09
+1  Greedy cheapest-compliant  viol_audit_pct   -0.267633     5  30  1.457477e-03
+2               Single-cloud            cost    4.101528    30  30  1.862645e-09
+3               Single-cloud  viol_audit_pct   -0.245271     9  30  1.718590e-03
+4            Random feasible            cost   19.868329    30  30  1.862645e-09
+5            Random feasible  viol_audit_pct   -1.389080     1  30  3.725290e-09
+6              Unconstrained            cost -136.328511     0  30  1.862645e-09
+7              Unconstrained  viol_audit_pct   34.768913    30  30  1.862645e-09
+lineage {'records': 3662, 'honest_verified': True, 'tampered': 168, 'detected': 168, 'build_ms_mean': np.float64(0.7744471232096354), 'verify_us_mean': np.float64(3.6587528034910313), 'proof_hashes': 7}
+                  variant  cost_mean  cost_std  viol_audit_pct_mean  viol_audit_pct_std  reid_mean_mean  reid_mean_std  served_pct_mean  served_pct_std  residency_breach_mean  residency_breach_std  lat_mean_mean  lat_mean_std    gas_mean    gas_std  all_ok_mean  all_ok_std
+0               Full MILP    146.936    22.734                4.982               0.766           0.236          0.006           82.533           3.301                    0.0                 0.000       2597.824         1.998  158199.851  28946.872      100.000       0.000
+1  w/o violation budget V    146.932    22.737                5.644               1.130           0.236          0.007           82.533           3.301                    0.0                 0.000       2598.217         1.583  157969.790  29295.600       16.667      37.905
+2      w/o lineage repair    160.131    20.836                4.720               0.688           0.235          0.007           80.667           3.042                    0.0                 0.000       2597.913         1.703  158181.068  28839.037      100.000       0.000
+3      w/o residency rule    146.877    22.729                5.051               0.788           0.235          0.006           82.533           3.301                    3.8                 2.265       2597.657         2.161  158346.964  28838.705       10.000      30.513
+4       w/o re-id cap rho     46.796    11.105                5.267               0.794           0.485          0.025           95.667           1.409                    0.0                 0.000       2597.654         2.036  158340.703  28718.717      100.000       0.000
+5   w/o anchoring budgets    146.555    22.778                4.994               0.769           0.236          0.006           82.533           3.301                    0.0                 0.000       4183.443       227.310   10411.989    758.695        0.000       0.000
+ablation done t=165s
+   v_bar     cost  viol_audit_pct  viol_plan_pct  served_pct  util_loss_gb  repair_pct
+0   0.02  155.443           3.135          1.997      81.333         0.221      10.610
+1   0.03  155.272           4.176          2.980      81.333         0.220       4.443
+2   0.04  155.246           5.411          3.938      81.333         0.220       3.781
+3   0.05  155.245           5.769          4.366      81.333         0.220       3.529
+4   0.06  155.245           5.861          4.433      81.333         0.220       3.529
+5   0.08  155.245           5.834          4.369      81.333         0.220       3.529
+6   0.10  155.244           5.838          4.382      81.333         0.220       3.529
+7   0.14  155.244           5.847          4.403      81.333         0.220       3.529
+8   0.20  155.244           5.847          4.403      81.333         0.220       3.529
+heat [[   nan    nan 160.08 159.77 159.68]
+ [   nan    nan 157.98 157.67 157.58]
+ [   nan    nan 157.34 157.03 156.94]
+ [   nan    nan 157.25 156.95 156.85]
+ [   nan    nan 157.12 156.81 156.72]]
+     N  rep  build_s  milp_s  greedy_s      nvars  gap
+0   50  1.0    0.086   0.034     0.050    877.000  0.0
+1  100  1.0    0.105   0.381     0.082   1728.333  0.0
+2  150  1.0    0.162   0.038     0.146   2617.000  0.0
+3  300  1.0    0.342   0.488     0.292   5331.333  0.0
+4  600  1.0    0.609   0.178     0.605  10570.667  0.0

@@ -1,0 +1,12 @@
+Item,Value
+Operations (rows),10000
+Columns,29
+Violation rate (%),23.81
+Mean re-id risk,0.441
+Cross-border ops (%),32.1
+Cross-border w/o adequacy (%),24.2
+Median records per op,21815
+Public L2 anchored (%),35.6
+Missing cells (3 cols),639
+Outliers winsorised,62
+Planner / auditor / scenario split,4000 / 3000 / 3000

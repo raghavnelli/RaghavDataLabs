@@ -1,0 +1,7 @@
+numpy>=2.0
+pandas>=2.2
+scipy>=1.11      # scipy.optimize.milp (HiGHS)
+scikit-learn>=1.4
+matplotlib>=3.8
+pillow>=10
+# system: Graphviz `dot` (for Fig. 1)
