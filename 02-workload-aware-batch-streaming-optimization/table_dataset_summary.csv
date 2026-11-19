@@ -1,0 +1,12 @@
+item,value
+rows total,12000.0
+train rows (2025),8066.0
+test rows (2026 H1),3934.0
+pipelines,179.0
+data sources,6.0
+SLA violation rate (%),15.56
+median p95 latency (s),12.38
+median cost (USD/h),5.0
+storm windows (%),4.43
+missing values imputed,652.0
+outliers repaired,90.0

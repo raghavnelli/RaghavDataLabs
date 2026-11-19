@@ -1,0 +1,7 @@
+data_source,rows,rate_med,sla_med_s,viol_pct,cost_med
+ami_smart_meter_reads,3558,8511.5,900.0,13.21,4.71
+der_inverter_telemetry,2464,6656.5,300.0,13.6,5.09
+outage_event_feed,947,387.1,8.0,15.21,4.44
+pmu_phasor_stream,1435,28350.0,8.0,27.67,6.73
+scada_feeder_telemetry,2378,5758.0,900.0,13.84,4.88
+substation_alarm_log,1218,865.3,8.0,15.76,4.69

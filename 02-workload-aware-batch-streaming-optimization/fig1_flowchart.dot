@@ -1,0 +1,10 @@
+digraph G { rankdir=TB; nodesep=0.15; ranksep=0.16; bgcolor="white";
+node [shape=box, style="rounded,filled", fillcolor="#f2f2f2", color="#444444", fontname="Times-Roman", fontsize=12, margin="0.08,0.03", width=2.9];
+edge [color="#444444", arrowsize=0.6];
+a [label="Hourly telemetry logs (AMI, PMU, SCADA, DER, outage, alarm)\nworkload + configuration → p95 latency, cost"];
+b [label="Preprocessing: robust-MAD outlier repair, per-source median\nimputation, workload-aware load-ratio feature"];
+c [label="LightGBM surrogates: log p95 latency, log cost\n+ out-of-fold residual model → SLA risk P[p95 > SLA]"];
+d [label="NSGA-II per workload: min {cost, log(p95/SLA)}\ns.t. P[p95 > SLA] ≤ α (constrained domination)", fillcolor="#f6dcd8", color="#c0392b"];
+e [label="Pareto front → deployment rule: cheapest SLA-safe config\n(mode, engine, window, executors, vCPU, spot, tier)"];
+f [label="Counterfactual oracle evaluation vs. baselines\n(cost, SLA violation, hypervolume, 5 seeds)"];
+a->b->c->d->e->f; d->c [style=dashed, label=" query", fontsize=8, fontname="Times-Roman"]; }

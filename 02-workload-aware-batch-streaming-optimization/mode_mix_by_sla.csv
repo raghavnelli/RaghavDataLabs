@@ -1,0 +1,7 @@
+,row_0,batch,micro_batch,streaming
+proposed,<=20 s,0.0,0.0,1.0
+proposed,60-300 s,0.0,0.039,0.961
+proposed,>=900 s,0.0333,0.25,0.7167
+logged,<=20 s,0.0,0.2698,0.7302
+logged,60-300 s,0.1429,0.5714,0.2857
+logged,>=900 s,0.5167,0.3333,0.15

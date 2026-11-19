@@ -1,0 +1,6 @@
+variant,cost_usd_h_mean,cost_usd_h_std,viol_pct_mean,viol_pct_std,attain_pct_mean,attain_pct_std,hv_oracle_mean,hv_oracle_std
+Full (proposed),1.0978,0.0211,1.0001,0.1596,94.0,1.3229,0.6278,0.0015
+No SLA-risk constraint,2.2133,0.0764,0.1851,0.0076,98.8333,0.2887,0.628,0.0008
+No uncertainty margin,1.0217,0.0158,6.6446,0.8302,79.6667,2.5658,0.6278,0.0006
+No load-ratio feature,1.0886,0.0262,5.1595,0.572,89.1667,1.7559,0.6286,0.0002
+Linear (ridge) surrogate,2.4288,0.0719,6.5206,1.2554,86.6667,2.5658,0.617,0.0001
