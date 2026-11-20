@@ -1,0 +1,16 @@
+Parameter,Value
+Window size N / windows,150 ops / 5 seeds x 6
+Per-op violation cap tau,0.2
+Window violation budget v_bar,0.04
+Re-id cap rho,0.35
+Capacity factor kappa,0.8
+Mean anchoring latency L_bar (ms),2600.0
+Gas budget fraction,0.3
+Deferral penalty (USD/op),5.0
+Utility-loss weight lambda_u (USD/GB),0.6
+Gas price (USD/gas),2e-06
+Options per op,9 sites x 5 transforms x 3 enc x 2 repair
+Anchoring options,"perm {1,64}; L2 {1,16,64,256}"
+MILP solver,"HiGHS (SciPy milp), rel. gap 1e-4, 60 s"
+Planner model,"L2-logistic, C=1"
+Auditor model,"HistGB, 300 trees, lr 0.05"
