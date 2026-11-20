@@ -1,7 +1,0 @@
-method,hv_sur_mean,hv_sur_std,hv_oracle_mean,hv_oracle_std,evals_mean,evals_std,runtime_s_mean,runtime_s_std,cost_usd_h_mean,cost_usd_h_std,viol_pct_mean,viol_pct_std,attain_pct_mean,attain_pct_std,lat_ratio_med_mean,lat_ratio_med_std
-As-operated (logged),,,,,0.0,0.0,0.0,0.0,6.8506,0.0,12.17,0.0,76.5,0.0,0.1756,0.0
-Static batch,,,,,0.0,0.0,0.0,0.0,4.0947,0.0,56.0095,0.0,30.0,0.0,0.9219,0.0
-Static streaming,,,,,0.0,0.0,0.0,0.0,6.1707,0.0,1.4472,0.0,90.5,0.0,0.0066,0.0
-Weighted-sum random search,0.6424,0.0009,0.6326,0.0008,2040.0,0.0,56.3896,11.8133,1.9768,0.048,0.2502,0.0497,98.5,0.6124,0.0055,0.0007
-Greedy,,,,,505.0,50.9117,7.0965,1.6149,0.8394,0.0058,5.5045,0.3834,90.9,0.8216,0.2062,0.0055
-NSGA-II + surrogate (proposed),0.6427,0.0014,0.6276,0.0011,2040.0,0.0,57.4444,7.4902,1.1082,0.0209,1.0918,0.1737,93.5,1.1726,0.0961,0.0276
